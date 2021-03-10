@@ -1,0 +1,76 @@
+/* RESET */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* COMMON */
+body{
+  font-family: 'Raleway', sans-serif;
+}
+
+.app-wrapper{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+  background-color: darkgrey;
+}
+/* FINE COMMON */
+
+
+/* MAIN */
+main{
+  width: 100%;
+  content: "";
+  display: table;
+  clear: both;
+  display: flex;
+}
+/* Side Bar */
+
+.side-bar{
+  width: 15%;
+  max-width: 280px;
+  height: 88vh;
+  float: left;
+  overflow: hidden;
+  background-color: black;
+}
+
+
+
+/* Fine Side Bar */
+
+
+/* Content */
+.content{
+  width: 85%;
+  height: 88vh;
+  float: left;
+  overflow: hidden;
+  flex-grow: 1;
+  background-color: #141922;
+}
+
+.upgrade{
+  width: 100%;
+  height: 12vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* Fine Content */
+
+/* FINE MAIN */
+
+/* FOOTER */
+footer{
+  width: 100%;
+  height: 12vh;
+  overflow: hidden;
+  background-color: #282828;
+}
+/* FINE FOOTER */
