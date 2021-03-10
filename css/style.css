@@ -14,8 +14,24 @@ body{
   width: 100%;
   height: 100vh;
   overflow: hidden;
+}
 
-  background-color: darkgrey;
+img{
+  width: 100%;
+}
+
+body, a{
+  color: #717171;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+main a:hover{
+  color: white;
+}
+
+ul{
+  list-style-type: none;
 }
 /* FINE COMMON */
 
@@ -28,23 +44,153 @@ main{
   clear: both;
   display: flex;
 }
-/* Side Bar */
 
+/* MAIN's > Side Bar */
 .side-bar{
   width: 15%;
   max-width: 280px;
+  min-width: 200px;
   height: 88vh;
   float: left;
   overflow: hidden;
   background-color: black;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
 }
 
+/* Logo */
+.logo{
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  align-items: center;
+}
+
+.logo img{
+  width: 70%;
+}
+
+/* Side Top Nav */
+.side-nav img{
+  width: 12%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.side-nav li{
+  margin-bottom: 10px;
+}
+
+.side-nav a{
+  color: #717171;
+  text-decoration: none;
+  font-size: 15px;
+  display: inline-block;
+  margin-left: 2px;
+  vertical-align: middle;
+}
+
+/* Playlists */
+.playlists-container{
+  margin-top: 25px;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.title{
+  text-transform: uppercase;
+  font-weight: 700;
+  color: white;
+}
+
+.new-playlist {
+  margin-top: 15px
+}
+
+.new-playlist .cross{
+  color: black;
+  background-color: #717171;
+  font-size: 55px;
+  font-weight: 400;
+  height: 38px;
+  width: 38px;
+  line-height: 38px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.add-playlist{
+  display: inline-block;
+  line-height: 38px;
+  margin-left: 5px;
+}
+
+.bottom-playlists{
+  height: calc(100% - 71px);
+}
+
+.playlist-list{
+  height: 100%;
+  min-height: 65px;
+  overflow-y: auto;
+}
+
+.playlist-list li{
+  margin-top: 16.5px;
+}
+
+/* Bottom Side Bar */
+.download-app{
+  width: calc(100% - 15px);
+  padding-bottom: 7px;
+  font-size: 13px;
+  border-bottom: 1px solid #717171;
+}
+
+.download-app img{
+  width: 12%;
+  opacity: 0.5;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.download-app a:hover img{
+  opacity: 1;
+}
+
+.user{
+  margin: 15px 0 10px;
+}
+
+.user-icon{
+  background-color: #717171;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.user-icon img{
+  height: auto;
+  width: 77%;
+  vertical-align: bottom;
+}
+
+.user-name{
+  display: inline-block;
+  color: white;
+  font-weight: 700;
+  margin-left: 5px;
+  line-height: 25px;
+}
+/* Fine MAIN's > Side Bar */
 
 
-/* Fine Side Bar */
 
-
-/* Content */
+/* MAIN's > Content */
 .content{
   width: 85%;
   height: 88vh;
@@ -54,15 +200,36 @@ main{
   background-color: #141922;
 }
 
+/* Upgrade */
 .upgrade{
   width: 100%;
   height: 12vh;
+  max-height: 120px;
   background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
+.pagace-btn{
+  text-transform: uppercase;
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 30px;
+  padding: 8px 40px;
+  height: 50%;
+  line-height: 50%;
+  margin-right: 15px;
+}
 
+.pagace-btn:hover{
+  cursor: pointer;
+  transform: scale(1.08);
+}
+/* Fine Upgrade */
 
-/* Fine Content */
+/* Fine MAIN's > Content */
 
 /* FINE MAIN */
 
@@ -70,6 +237,7 @@ main{
 footer{
   width: 100%;
   height: 12vh;
+  max-height: 120px;
   overflow: hidden;
   background-color: #282828;
 }

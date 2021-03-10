@@ -6,6 +6,7 @@
     <title>SpotifyWeb</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -18,20 +19,89 @@
         <!-- Side Bar -->
         <section class="side-bar">
 
+          <!-- Logo -->
+          <div class="logo-container">
+            <div class="logo">
+                <img src="img/logo.svg" alt="Spotify's Logo">
+            </div>
+          </div>
+          <!-- Fine Logo -->
+
           <!-- Top Nav -->
           <nav class="side-top-nav">
+
+            <ul class="side-nav">
+
+              <li>
+                <img src="img/home.svg" alt="Home">
+                <a href="#">Home</a>
+              </li>
+
+              <li>
+                <img src="img/search.svg" alt="Search">
+                <a href="#">Cerca</a>
+              </li>
+
+              <li>
+                <img src="img/libreria.svg" alt="Libreria">
+                <a href="#">La tua libreria</a>
+              </li>
+
+            </ul>
 
           </nav>
           <!-- Fine Top Nav -->
 
           <!-- Playlists -->
-          <div class="playlists">
+          <div class="playlists-container">
+
+              <div class="top-playlists">
+
+                <div class="title">
+                  Playlist
+                </div>
+
+                <div class="new-playlist">
+                  <span class="cross">+</span>
+                  <div class="add-playlist">
+                    <a href="#">Crea Playlist</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bottom-playlists">
+                <ul class="playlist-list">
+                  <li><a href="#">Nome Playlist</a></li>
+                  <li><a href="#">Nome Playlist</a></li>
+                  <li><a href="#">Nome Playlist</a></li>
+                  <li><a href="#">Nome Playlist</a></li>
+                  <li><a href="#">Nome Playlist</a></li>
+                  <li><a href="#">Nome Playlist</a></li>
+                  <li><a href="#">Nome Playlist</a></li>
+                </ul>
+              </div>
 
           </div>
           <!-- Fine Playlists -->
 
           <!-- Bottom Side Bar -->
           <div class="bottom-side-bar">
+
+            <div class="download-app">
+              <a href="#">
+                <img src="img/download.svg" alt="download icon">
+                Installa app
+              </a>
+            </div>
+
+            <div class="user">
+              <div class="user-icon">
+                <img src="img/profile.svg" alt="user icon">
+              </div>
+              <div class="user-name">
+                John Doe
+              </div>
+            </div>
 
           </div>
           <!-- Fine Bottom Side Bar -->
@@ -45,6 +115,9 @@
           <!-- Upgrade Section -->
           <div class="upgrade">
 
+            <button class="pagace-btn">
+              Effettua l'upgrade
+            </button>
           </div>
           <!-- Fine Upgrade Section -->
 
