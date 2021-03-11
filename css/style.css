@@ -34,10 +34,6 @@ ul{
   list-style-type: none;
 }
 
-.active{
-  color: white;
-}
-
 .clearfix:after {
   content: "";
   display: table;
@@ -72,18 +68,53 @@ ul{
 }
 
 /* Side Top Nav */
+.side-top-nav{
+  margin-left: -15px;
+}
+
 .side-nav li img{
   width: 12%;
   display: inline-block;
   vertical-align: middle;
 }
 
-.side-nav li{
+.side-nav li {
+  padding-left: 15px;
   margin-bottom: 10px;
   opacity: 0.5;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
 }
 
-.side-nav .active,
+.side-nav li:before{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 4px;
+  background: #1CB955;
+  transform: translateX(-4px);
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.side-nav li:hover:before,
+.side-nav li:focus:before,
+.side-nav li:active:before,
+.side-nav li.active-side-nav:before{
+  transform: translateY(0);
+}
+
+.active-side-nav{
+  color: white;
+}
+
+.side-nav .active-side-nav,
 .side-nav li:hover{
   opacity: 1;
 }
@@ -194,8 +225,6 @@ ul{
 }
 /* Fine MAIN's > Side Bar */
 
-
-
 /* MAIN's > Content */
 .content{
   width: calc(100% - 250px);
@@ -244,9 +273,42 @@ ul{
   margin-top: 100px;
 }
 
-.content-nav li{
+.content-nav li {
   margin-right: 25px;
   padding: 25px 0;
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+
+.content-nav li:before,
+.active-top-nav:before{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 15px;
+  background: #1CB955;
+  height: 4px;
+  transition-property: left, right;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.content-nav li:hover:before,
+.content-nav li:focus:before,
+.content-nav li:active:before,
+.active-top-nav:before{
+  left: 25%;
+  right: 25%;
+}
+
+.active-top-nav{
+  color: white;
 }
 
 .content-nav li:last-child{
@@ -311,9 +373,6 @@ ul{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.overlay i{
   font-size: 50px;
 }
 
