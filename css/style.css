@@ -318,7 +318,6 @@ footer{
 
 /* Player */
 .player{
-  min-width: 50%;
   flex-grow: 1;
 }
 
