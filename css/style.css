@@ -33,6 +33,10 @@ body a:hover{
 ul{
   list-style-type: none;
 }
+
+.active{
+  color: white;
+}
 /* FINE COMMON */
 
 
@@ -47,10 +51,8 @@ main{
 
 /* MAIN's > Side Bar */
 .side-bar{
-  width: 15%;
-  max-width: 280px;
-  min-width: 220px;
-  height: 88vh;
+  width: 250px;
+  height: calc(100vh - 100px);
   float: left;
   overflow: hidden;
   background-color: black;
@@ -62,8 +64,7 @@ main{
 /* Logo */
 .logo{
   width: 100%;
-  height: 12vh;
-  min-height: 90px;
+  height: 100px;
   display: flex;
   align-items: center;
 }
@@ -100,7 +101,7 @@ main{
 
 /* Playlists */
 .playlists-container{
-  margin-top: 25px;
+  margin-top: 20px;
   flex-grow: 1;
   overflow: hidden;
 }
@@ -109,9 +110,6 @@ main{
   text-transform: uppercase;
   font-weight: 700;
   color: white;
-}
-
-.new-playlist {
 }
 
 .add-playlist .cross{
@@ -137,7 +135,6 @@ main{
   background-color: white;
 }
 
-
 .bottom-playlists{
   height: calc(100% - 71px);
 }
@@ -156,7 +153,7 @@ main{
 .download-app{
   width: calc(100% - 15px);
   padding-bottom: 7px;
-  font-size: 13px;
+  font-size: 14px;
   border-bottom: 1px solid #717171;
 }
 
@@ -203,24 +200,25 @@ main{
 
 /* MAIN's > Content */
 .content{
-  width: 85%;
-  height: 88vh;
+  width: calc(100% - 250px);
+  height: calc(100vh - 100px);
   float: left;
-  overflow: hidden;
-  flex-grow: 1;
+  overflow-y: auto;
   background-color: #141922;
 }
 
 /* Upgrade */
 .upgrade{
-  width: 100%;
-  height: 12vh;
-  min-height: 90px;
-  max-height: 120px;
+  width: calc(100% - 250px);
+  height: 100px;
   background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  z-index: 1;
 }
 
 .pagace-btn{
@@ -232,15 +230,126 @@ main{
   padding: 8px 40px;
   height: 50%;
   line-height: 50%;
-  margin-right: 15px;
+  margin-right: 39px;
 }
 
 .pagace-btn:hover{
   cursor: pointer;
   transform: scale(1.08);
 }
-/* Fine Upgrade */
 
+/* Content Section Nav */
+.content-nav{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.content-nav li{
+  margin-right: 25px;
+  padding: 25px 0;
+}
+
+.content-nav li:last-child{
+  margin-right: 0;
+}
+
+.content-nav li a{
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* Music */
+.music{
+  padding: 0 20px 50px;
+  color: white;
+}
+
+.recently-played{
+  margin-top: 5px;
+}
+
+.recently-played h2{
+  font-weight: 700;
+}
+
+.albums-container{
+  margin-top: 33px;
+  display: flex;
+}
+
+.album{
+  width: calc(100% / 6);
+  margin-right: 15px;
+  text-align: center;
+}
+
+.album:last-child{
+  margin-right: 0;
+}
+
+.album-img{
+  position: relative;
+}
+
+.overlay,
+.overlay i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+
+.overlay{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay i{
+  font-size: 50px;
+}
+
+
+.popular-artists .overlay{
+  border-radius: 50%;
+}
+
+.album:hover{
+  cursor: pointer;
+}
+
+.album:hover .overlay,
+.album:hover .overlay i{
+  display: block;
+}
+
+.album-name{
+  padding: 15px 0 5px;
+}
+
+.author{
+  color: #717171;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.recomended-playists,
+.popular-artists{
+  margin-top: 50px;
+}
+
+.recomended-playists h2{
+  margin-bottom: 10px;
+}
+
+
+.popular-artists .album-img img{
+  border-radius: 50%;
+}
 /* Fine MAIN's > Content */
 
 /* FINE MAIN */
@@ -261,8 +370,7 @@ main{
 /* FOOTER */
 footer{
   width: 100%;
-  height: 12vh;
-  max-height: 120px;
+  height: 100px;
   overflow: hidden;
   background-color: #282828;
   display: flex;
