@@ -26,12 +26,16 @@ body, a{
   font-weight: 600;
 }
 
-main a:hover{
+body a:hover{
   color: white;
 }
 
 ul{
   list-style-type: none;
+}
+
+.side-nav .active{
+  opacity: 1;
 }
 /* FINE COMMON */
 
@@ -49,7 +53,7 @@ main{
 .side-bar{
   width: 15%;
   max-width: 280px;
-  min-width: 200px;
+  min-width: 220px;
   height: 88vh;
   float: left;
   overflow: hidden;
@@ -72,7 +76,7 @@ main{
 }
 
 /* Side Top Nav */
-.side-nav img{
+.side-nav li img{
   width: 12%;
   display: inline-block;
   vertical-align: middle;
@@ -80,10 +84,11 @@ main{
 
 .side-nav li{
   margin-bottom: 10px;
+  opacity: 0.5;
 }
 
 .side-nav a{
-  color: #717171;
+  color: white;
   text-decoration: none;
   font-size: 15px;
   display: inline-block;
@@ -105,10 +110,9 @@ main{
 }
 
 .new-playlist {
-  margin-top: 15px
 }
 
-.new-playlist .cross{
+.add-playlist .cross{
   color: black;
   background-color: #717171;
   font-size: 55px;
@@ -119,13 +123,18 @@ main{
   text-align: center;
   display: inline-block;
   vertical-align: bottom;
+  margin-right: 5px;
 }
 
 .add-playlist{
-  display: inline-block;
+  margin-top: 15px;
   line-height: 38px;
-  margin-left: 5px;
 }
+
+.add-playlist a:hover .cross{
+  background-color: white;
+}
+
 
 .bottom-playlists{
   height: calc(100% - 71px);
@@ -204,6 +213,7 @@ main{
 .upgrade{
   width: 100%;
   height: 12vh;
+  min-height: 90px;
   max-height: 120px;
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
@@ -233,12 +243,213 @@ main{
 
 /* FINE MAIN */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* FOOTER */
 footer{
   width: 100%;
   height: 12vh;
+  min-height: 90px;
   max-height: 120px;
   overflow: hidden;
   background-color: #282828;
+  display: flex;
+  justify-content: space-between;
 }
+
+/* Playing Track */
+.now-playing{
+  width: 15%;
+  max-width: 280px;
+  min-width: 220px;
+  padding: 0 15px;
+}
+
+.footer-container-track{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.track-image img{
+  height: 45px;
+  width: auto;
+}
+
+.track-info{
+  margin-left: 10px;
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  flex-grow: 1;
+}
+
+.track-info a{
+  font-weight: 600;
+}
+
+.track-info a:hover{
+  text-decoration: underline;
+}
+
+.left-icons a{
+  margin-left: 10px;
+  font-size: 17px;
+}
+
+.left-icons i{
+}
+
+.left-icons a:first-child{
+  margin-left: 0;
+}
+
+/* Player */
+.player{
+  min-width: 50%;
+  flex-grow: 1;
+}
+
+.footer-container-player{
+  text-align: center;
+  height: 100%;
+}
+
+.player-commands{
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.player-commands-icons{
+  display: flex;
+  align-items: center;
+}
+
+.player-commands-icons a{
+  margin-right: 30px;
+}
+
+.player-commands-icons a:last-child{
+  font-size: 15px;
+  margin-right: 0;
+}
+
+.player-commands-icons a:nth-child(3){
+  font-size: 30px;
+}
+
+.play-bar{
+  height: 40%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.play-bar{
+  font-size: 13px;
+  color: white;
+}
+
+.track-bar{
+  background-color: #717171;
+  height: 4px;
+  width: 40%;
+  border-radius: 4px;
+  margin: 6px 25px 0;
+}
+
+.current-time-bar{
+  background-color: white;
+  opacity: 0.6;
+  width: 20%;
+  height: 4px;
+}
+
+.track-bar:hover{
+  cursor: pointer;
+}
+
+.track-bar:hover .current-time-bar{
+  opacity: 1;
+}
+
+/* Player Settings */
+.player-settings{
+  width: 15%;
+  max-width: 280px;
+  min-width: 220px;
+  padding: 0 15px;
+}
+
+.footer-container-settings{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.right-icons{
+  text-align: right;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.right-icons i{
+  float: left;
+}
+
+.right-icons i,
+.volume-control i{
+  margin-right: 12px;
+  color: white;
+  font-size: 15px;
+}
+
+.volume-control{
+  width: 68%;
+}
+
+.volume-control i{
+  margin-right: 10px;
+}
+
+.volume-bar{
+  display: inline-block;
+  background-color: #717171;
+  height: 4px;
+  width: 70%;
+  vertical-align: middle;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.current-volume{
+  background-color: white;
+  opacity: 0.6;
+  width: 49%;
+  height: 4px;
+}
+
+.volume-bar:hover{
+  cursor: pointer;
+}
+
+.volume-bar:hover .current-volume{
+  opacity: 1;
+}
+
+
 /* FINE FOOTER */

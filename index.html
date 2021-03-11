@@ -32,7 +32,7 @@
 
             <ul class="side-nav">
 
-              <li>
+              <li class="active">
                 <img src="img/home.svg" alt="Home">
                 <a href="#">Home</a>
               </li>
@@ -61,12 +61,15 @@
                   Playlist
                 </div>
 
-                <div class="new-playlist">
-                  <span class="cross">+</span>
-                  <div class="add-playlist">
-                    <a href="#">Crea Playlist</a>
-                  </div>
+                <div class="add-playlist">
+
+                  <a href="#">
+                    <span class="cross">+</span>
+                    Crea Playlist
+                  </a>
+
                 </div>
+
               </div>
 
               <div class="bottom-playlists">
@@ -135,12 +138,93 @@
         </section>
         <!-- Fine Content -->
 
-
       </main>
       <!-- Fine Main -->
 
+
       <!-- Footer -->
       <footer>
+
+        <!-- Playing Track -->
+        <div class="now-playing">
+
+          <div class="footer-container-track">
+
+            <div class="track-image">
+              <img src="img/sinister.jpeg" alt="Album image">
+            </div>
+
+            <div class="track-info">
+              Sinister<br>
+              <a href="#">Brano Nome</a>
+            </div>
+
+            <div class="left-icons">
+              <a href="#"><i class="far fa-heart"></i></a>
+              <a href="#"><i class="far fa-folder"></i></a>
+            </div>
+
+          </div>
+
+        </div>
+        <!-- Fine Playing Track -->
+
+        <!-- Player -->
+        <div class="player">
+
+          <div class="player-commands">
+
+            <div class="player-commands-container">
+
+              <div class="player-commands-icons">
+                <a href="#"><i class="fas fa-random"></i></a>
+                <a href="#"><i class="fas fa-step-backward"></i></a>
+                <a href="#"><i class="far fa-play-circle"></i></a>
+                <a href="#"><i class="fas fa-step-forward"></i></a>
+                <a href="#"><i class="fas fa-redo-alt"></i></a>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="play-bar">
+
+            <div class="current-time">0:25</div>
+
+            <div class="track-bar">
+              <div class="current-time-bar"></div>
+            </div>
+
+            <div class="track-duration">4.35</div>
+
+          </div>
+
+        </div>
+        <!-- Fine Player -->
+
+        <!-- Player Settings -->
+        <div class="player-settings">
+
+          <div class="footer-container-settings">
+
+            <div class="right-icons">
+              <a href="#"><i class="fas fa-list"></i></a>
+              <a href="#"><i class="fas fa-desktop"></i></a>
+            </div>
+
+            <div class="volume-control">
+              <a href="#"><i class="fas fa-volume-up"></i></a>
+              <div class="volume-bar">
+                <div class="current-volume"></div>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+        <!-- Fine Player Settings -->
 
       </footer>
       <!-- Fine Footer -->
