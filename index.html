@@ -1,446 +1,450 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SpotifyWeb</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
 
-    <!-- APP CONTAINER -->
-    <div class="app-wrapper">
-      <!-- MAIN -->
-      <main class="clearfix">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpotifyWeb</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-        <!-- Side Bar -->
-        <section class="side-bar">
+<body>
 
-          <!-- Logo -->
-          <div class="logo-container">
-            <div class="logo">
-                <img src="img/logo.svg" alt="Spotify's Logo">
+  <!-- APP CONTAINER -->
+  <div class="app-wrapper">
+    <!-- MAIN -->
+    <main class="clearfix">
+
+      <!-- Side Bar -->
+      <section class="side-bar">
+
+        <!-- Logo -->
+        <div class="logo-container">
+          <div class="logo">
+            <img src="img/logo.svg" alt="Spotify's Logo">
+            <img src="img/logo-small.svg" alt="Spotify's Small Logo">
+          </div>
+        </div>
+        <!-- Fine Logo -->
+
+        <!-- Top Nav -->
+        <nav class="side-top-nav">
+
+          <ul class="side-nav">
+
+            <li class="active-side-nav">
+              <img src="img/home.svg" alt="Home">
+              <a href="#">Home</a>
+            </li>
+
+            <li>
+              <img src="img/search.svg" alt="Search">
+              <a href="#">Cerca</a>
+            </li>
+
+            <li>
+              <img src="img/libreria.svg" alt="Libreria">
+              <a href="#">La tua libreria</a>
+            </li>
+
+          </ul>
+
+        </nav>
+        <!-- Fine Top Nav -->
+
+        <!-- Playlists -->
+        <div class="playlists-container">
+
+          <div class="top-playlists">
+
+            <div class="title">
+              Playlist
             </div>
-          </div>
-          <!-- Fine Logo -->
 
-          <!-- Top Nav -->
-          <nav class="side-top-nav">
+            <div class="add-playlist">
 
-            <ul class="side-nav">
-
-              <li class="active-side-nav">
-                <img src="img/home.svg" alt="Home">
-                <a href="#">Home</a>
-              </li>
-
-              <li>
-                <img src="img/search.svg" alt="Search">
-                <a href="#">Cerca</a>
-              </li>
-
-              <li>
-                <img src="img/libreria.svg" alt="Libreria">
-                <a href="#">La tua libreria</a>
-              </li>
-
-            </ul>
-
-          </nav>
-          <!-- Fine Top Nav -->
-
-          <!-- Playlists -->
-          <div class="playlists-container">
-
-              <div class="top-playlists">
-
-                <div class="title">
-                  Playlist
-                </div>
-
-                <div class="add-playlist">
-
-                  <a href="#">
-                    <span class="cross">+</span>
-                    Crea Playlist
-                  </a>
-
-                </div>
-
-              </div>
-
-              <div class="bottom-playlists">
-                <ul class="playlist-list">
-                  <li><a href="#">Nome Playlist</a></li>
-                  <li><a href="#">Nome Playlist</a></li>
-                  <li><a href="#">Nome Playlist</a></li>
-                  <li><a href="#">Nome Playlist</a></li>
-                  <li><a href="#">Nome Playlist</a></li>
-                  <li><a href="#">Nome Playlist</a></li>
-                  <li><a href="#">Nome Playlist</a></li>
-                </ul>
-              </div>
-
-          </div>
-          <!-- Fine Playlists -->
-
-          <!-- Bottom Side Bar -->
-          <div class="bottom-side-bar">
-
-            <div class="download-app">
               <a href="#">
-                <img src="img/download.svg" alt="download icon">
-                Installa app
+                <span class="cross">+</span>
+                Crea Playlist
               </a>
-            </div>
 
-            <div class="user">
-              <div class="user-icon">
-                <img src="img/profile.svg" alt="user icon">
-              </div>
-              <div class="user-name">
-                John Doe
-              </div>
             </div>
 
           </div>
-          <!-- Fine Bottom Side Bar -->
 
-        </section>
-        <!-- Fine Side Bar -->
-
-        <!-- CONTENT -->
-        <section class="content">
-
-          <!-- Upgrade Section -->
-          <div class="upgrade">
-
-            <button class="pagace-btn">
-              Effettua l'upgrade
-            </button>
-          </div>
-          <!-- Fine Upgrade Section -->
-
-          <!-- Content Section Nav -->
-          <nav class="top-nav-content">
-
-            <ul class="content-nav">
-              <li><a class="active-top-nav" href="#">In Evidenza</a></li>
-              <li><a href="#">Podcast</a></li>
-              <li><a href="#">Classifiche</a></li>
-              <li><a href="#">Generi e Mood</a></li>
-              <li><a href="#">Nuove uscite</a></li>
-              <li><a href="#">Scopri</a></li>
+          <div class="bottom-playlists">
+            <ul class="playlist-list">
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
             </ul>
-
-          </nav>
-          <!-- Fine Content Section Nav -->
-
-          <!-- MUSIC -->
-          <div class="music">
-            <!-- Ascoltate di recente -->
-            <div class="recently-played">
-
-              <h2>Ascoltate di recente</h2>
-
-              <!-- Contenitore Album -->
-              <div class="albums-container">
-                <!-- Single Album -->
-                <div class="album">
-                  <div class="album-img">
-                    <img src="img/metal_lifting.jpg" alt="Heavy Metal Album Cover">
-                    <div class="overlay">
-                      <i class="far fa-play-circle"></i>
-                    </div>
-                  </div>
-                  <div class="album-name">
-                    <h4>Heavy Metal</h4>
-                  </div>
-                  <div class="album-author">
-                    <p class="author">Subtitle</p>
-                  </div>
-                </div>
-                <!-- Fine single Album -->
-
-                <!-- Single Album -->
-                <div class="album">
-                  <div class="album-img">
-                    <img src="img/stranger.jpeg" alt="Stranger Things Album Cover">
-                    <div class="overlay">
-                      <i class="far fa-play-circle"></i>
-                    </div>
-                  </div>
-                  <div class="album-name">
-                    <h4>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h4>
-                  </div>
-                  <div class="album-author">
-                    <p class="author">Kyle Dixon & Michael Stein</p>
-                  </div>
-                </div>
-                <!-- Fine single Album -->
-
-                <!-- Single Album -->
-                <div class="album">
-                  <div class="album-img">
-                    <img src="img/aquietplace.jpeg" alt="A Quiet Place Album Cover">
-                    <div class="overlay">
-                      <i class="far fa-play-circle"></i>
-                    </div>
-                  </div>
-                  <div class="album-name">
-                    <h4>A queit place</h4>
-                  </div>
-                  <div class="album-author">
-                    <p class="author">Subtitle</p>
-                  </div>
-                </div>
-                <!-- Fine single Album -->
-
-                <!-- Single Album -->
-                <div class="album">
-                  <div class="album-img">
-                    <img src="img/split.jpeg" alt="Split Album Cover">
-                    <div class="overlay">
-                      <i class="far fa-play-circle"></i>
-                    </div>
-                  </div>
-                  <div class="album-name">
-                    <h4>Split</h4>
-                  </div>
-                  <div class="album-author">
-                    <p class="author">Subtitle</p>
-                  </div>
-                </div>
-                <!-- Fine single Album -->
-
-                <!-- Single Album -->
-                <div class="album">
-                  <div class="album-img">
-                    <img src="img/cure.jpeg" alt="Cure Album Cover">
-                    <div class="overlay">
-                      <i class="far fa-play-circle"></i>
-                    </div>
-                  </div>
-                  <div class="album-name">
-                    <h4>A cure for wellness</h4>
-                  </div>
-                  <div class="album-author">
-                    <p class="author">Subtitle</p>
-                  </div>
-                </div>
-                <!-- Fine single Album -->
-
-                <!-- Single Album -->
-                <div class="album">
-                  <div class="album-img">
-                    <img src="img/sinister.jpeg" alt="Sinister Album Cover">
-                    <div class="overlay">
-                      <i class="far fa-play-circle"></i>
-                    </div>
-                  </div>
-                  <div class="album-name">
-                    <h4>Sinister</h4>
-                  </div>
-                  <div class="album-author">
-                    <p class="author">Subtitle</p>
-                  </div>
-                </div>
-                <!-- Fine single Album -->
-              </div>
-              <!-- Contenitore Album -->
-            </div>
-            <!-- Fine Ascoltate di recente -->
-
-            <!-- Album raccomandati -->
-            <div class="recomended-playists">
-
-              <h2>Creato per John Doe</h2>
-
-              <p class="author">
-                Più ascolti, più accurati saranno i suggerimenti
-              </p>
-
-              <!-- Contenitore Album -->
-              <div class="albums-container">
-                <!-- Single Album -->
-                <div class="album">
-                  <div class="album-img">
-                    <img src="img/radar.jpeg" alt="Radar Album Cover">
-                    <div class="overlay">
-                      <i class="far fa-play-circle"></i>
-                    </div>
-                  </div>
-                  <div class="album-name">
-                    <h4>Release Radar</h4>
-                  </div>
-                </div>
-                <!-- Fine single Album -->
-
-                <!-- Single Album -->
-                <div class="album">
-                  <div class="album-img">
-                    <img src="img/mixdaily.jpeg" alt="Daily Mix Album Cover">
-                    <div class="overlay">
-                      <i class="far fa-play-circle"></i>
-                    </div>
-                  </div>
-                  <div class="album-name">
-                    <h4>Daily Mix 1</h4>
-                  </div>
-                </div>
-                <!-- Fine single Album -->
-              </div>
-              <!-- Fine Contenitore Album -->
-            </div>
-            <!-- Fine Album raccomandati -->
-
-            <!-- Artisti Popolari -->
-            <div class="popular-artists">
-
-              <h2>Artisti più popolari</h2>
-
-              <p class="author">
-                Più ascolti, più accurati saranno i suggerimenti
-              </p>
-
-              <!-- Contenitore Album -->
-              <div class="albums-container">
-                <!-- Single Album -->
-                <div class="album">
-                  <div class="album-img">
-                    <img src="img/youg.jpeg" alt="Lana Del Rey Picture">
-                    <div class="overlay">
-                      <i class="far fa-play-circle"></i>
-                    </div>
-                  </div>
-                  <div class="album-name">
-                    <h4>Release Radar</h4>
-                  </div>
-                </div>
-                <!-- Fine single Album -->
-
-                <!-- Single Album -->
-                <div class="album">
-                  <div class="album-img">
-                    <img src="img/einaudi.jpeg" alt="Ludovico Einaudi Picture">
-                    <div class="overlay">
-                      <i class="far fa-play-circle"></i>
-                    </div>
-                  </div>
-                  <div class="album-name">
-                    <h4>Daily Mix 1</h4>
-                  </div>
-                </div>
-                <!-- Fine single Album -->
-              </div>
-              <!-- Fine Contenitore Album -->
-            </div>
-            <!-- Fine Artisti Popolari -->
-
           </div>
-          <!-- Fine MUSIC -->
-        </section>
-        <!-- Fine CCONTENT -->
 
-      </main>
-      <!-- Fine MAIN -->
+        </div>
+        <!-- Fine Playlists -->
 
+        <!-- Bottom Side Bar -->
+        <div class="bottom-side-bar">
 
-      <!-- FOOTER -->
-      <footer>
+          <div class="download-app">
+            <img src="img/download.svg" alt="download icon">
+            <a href="#">
+              Installa app
+            </a>
+          </div>
 
-        <!-- Playing Track -->
-        <div class="now-playing">
-
-          <div class="footer-container-track">
-
-            <div class="track-image">
-              <img src="img/sinister.jpeg" alt="Album image">
+          <div class="user">
+            <div class="user-icon">
+              <img src="img/profile.svg" alt="user icon">
             </div>
-
-            <div class="track-info">
-              Sinister<br>
-              <a href="#">Brano Nome</a>
+            <div class="user-name">
+              John Doe
             </div>
+          </div>
 
-            <div class="left-icons">
-              <a href="#"><i class="far fa-heart"></i></a>
-              <a href="#"><i class="far fa-folder"></i></a>
+        </div>
+        <!-- Fine Bottom Side Bar -->
+
+      </section>
+      <!-- Fine Side Bar -->
+
+      <!-- CONTENT -->
+      <section class="content">
+
+        <!-- Upgrade Section -->
+        <div class="upgrade">
+
+          <button class="pagace-btn">
+            Effettua l'upgrade
+          </button>
+        </div>
+        <!-- Fine Upgrade Section -->
+
+        <!-- Content Section Nav -->
+        <nav class="top-nav-content">
+
+          <ul class="content-nav">
+            <li><a class="active-top-nav" href="#">In Evidenza</a></li>
+            <li><a href="#">Podcast</a></li>
+            <li><a href="#">Classifiche</a></li>
+            <li><a href="#">Generi e Mood</a></li>
+            <li><a href="#">Nuove uscite</a></li>
+            <li><a href="#">Scopri</a></li>
+          </ul>
+
+        </nav>
+        <!-- Fine Content Section Nav -->
+
+        <!-- MUSIC -->
+        <div class="music">
+          <!-- Ascoltate di recente -->
+          <div class="recently-played">
+
+            <h2>Ascoltate di recente</h2>
+
+            <!-- Contenitore Album -->
+            <div class="albums-container">
+              <!-- Single Album -->
+              <div class="album">
+                <div class="album-img">
+                  <img src="img/metal_lifting.jpg" alt="Heavy Metal Album Cover">
+                  <div class="overlay">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                </div>
+                <div class="album-name">
+                  <h4>Heavy Metal</h4>
+                </div>
+                <div class="album-author">
+                  <p class="author">Subtitle</p>
+                </div>
+              </div>
+              <!-- Fine single Album -->
+
+              <!-- Single Album -->
+              <div class="album">
+                <div class="album-img">
+                  <img src="img/stranger.jpeg" alt="Stranger Things Album Cover">
+                  <div class="overlay">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                </div>
+                <div class="album-name">
+                  <h4>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h4>
+                </div>
+                <div class="album-author">
+                  <p class="author">Kyle Dixon & Michael Stein</p>
+                </div>
+              </div>
+              <!-- Fine single Album -->
+
+              <!-- Single Album -->
+              <div class="album">
+                <div class="album-img">
+                  <img src="img/aquietplace.jpeg" alt="A Quiet Place Album Cover">
+                  <div class="overlay">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                </div>
+                <div class="album-name">
+                  <h4>A queit place</h4>
+                </div>
+                <div class="album-author">
+                  <p class="author">Subtitle</p>
+                </div>
+              </div>
+              <!-- Fine single Album -->
+
+              <!-- Single Album -->
+              <div class="album">
+                <div class="album-img">
+                  <img src="img/split.jpeg" alt="Split Album Cover">
+                  <div class="overlay">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                </div>
+                <div class="album-name">
+                  <h4>Split</h4>
+                </div>
+                <div class="album-author">
+                  <p class="author">Subtitle</p>
+                </div>
+              </div>
+              <!-- Fine single Album -->
+
+              <!-- Single Album -->
+              <div class="album">
+                <div class="album-img">
+                  <img src="img/cure.jpeg" alt="Cure Album Cover">
+                  <div class="overlay">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                </div>
+                <div class="album-name">
+                  <h4>A cure for wellness</h4>
+                </div>
+                <div class="album-author">
+                  <p class="author">Subtitle</p>
+                </div>
+              </div>
+              <!-- Fine single Album -->
+
+              <!-- Single Album -->
+              <div class="album">
+                <div class="album-img">
+                  <img src="img/sinister.jpeg" alt="Sinister Album Cover">
+                  <div class="overlay">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                </div>
+                <div class="album-name">
+                  <h4>Sinister</h4>
+                </div>
+                <div class="album-author">
+                  <p class="author">Subtitle</p>
+                </div>
+              </div>
+              <!-- Fine single Album -->
+            </div>
+            <!-- Contenitore Album -->
+          </div>
+          <!-- Fine Ascoltate di recente -->
+
+          <!-- Album raccomandati -->
+          <div class="recomended-playists">
+
+            <h2>Creato per John Doe</h2>
+
+            <p class="author">
+              Più ascolti, più accurati saranno i suggerimenti
+            </p>
+
+            <!-- Contenitore Album -->
+            <div class="albums-container">
+              <!-- Single Album -->
+              <div class="album">
+                <div class="album-img">
+                  <img src="img/radar.jpeg" alt="Radar Album Cover">
+                  <div class="overlay">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                </div>
+                <div class="album-name">
+                  <h4>Release Radar</h4>
+                </div>
+              </div>
+              <!-- Fine single Album -->
+
+              <!-- Single Album -->
+              <div class="album">
+                <div class="album-img">
+                  <img src="img/mixdaily.jpeg" alt="Daily Mix Album Cover">
+                  <div class="overlay">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                </div>
+                <div class="album-name">
+                  <h4>Daily Mix 1</h4>
+                </div>
+              </div>
+              <!-- Fine single Album -->
+            </div>
+            <!-- Fine Contenitore Album -->
+          </div>
+          <!-- Fine Album raccomandati -->
+
+          <!-- Artisti Popolari -->
+          <div class="popular-artists">
+
+            <h2>Artisti più popolari</h2>
+
+            <p class="author">
+              Più ascolti, più accurati saranno i suggerimenti
+            </p>
+
+            <!-- Contenitore Album -->
+            <div class="albums-container">
+              <!-- Single Album -->
+              <div class="album">
+                <div class="album-img">
+                  <img src="img/youg.jpeg" alt="Lana Del Rey Picture">
+                  <div class="overlay">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                </div>
+                <div class="album-name">
+                  <h4>Release Radar</h4>
+                </div>
+              </div>
+              <!-- Fine single Album -->
+
+              <!-- Single Album -->
+              <div class="album">
+                <div class="album-img">
+                  <img src="img/einaudi.jpeg" alt="Ludovico Einaudi Picture">
+                  <div class="overlay">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                </div>
+                <div class="album-name">
+                  <h4>Daily Mix 1</h4>
+                </div>
+              </div>
+              <!-- Fine single Album -->
+            </div>
+            <!-- Fine Contenitore Album -->
+          </div>
+          <!-- Fine Artisti Popolari -->
+
+        </div>
+        <!-- Fine MUSIC -->
+      </section>
+      <!-- Fine CCONTENT -->
+
+    </main>
+    <!-- Fine MAIN -->
+
+
+    <!-- FOOTER -->
+    <footer>
+
+      <!-- Playing Track -->
+      <div class="now-playing">
+
+        <div class="footer-container-track">
+
+          <div class="track-image">
+            <img src="img/sinister.jpeg" alt="Album image">
+          </div>
+
+          <div class="track-info">
+            Sinister<br>
+            <a href="#">Brano Nome</a>
+          </div>
+
+          <div class="left-icons">
+            <a href="#"><i class="far fa-heart"></i></a>
+            <a href="#"><i class="far fa-folder"></i></a>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- Fine Playing Track -->
+
+      <!-- Player -->
+      <div class="player">
+
+        <div class="player-commands">
+
+          <div class="player-commands-container">
+
+            <div class="player-commands-icons">
+              <a href="#"><i class="fas fa-random"></i></a>
+              <a href="#"><i class="fas fa-step-backward"></i></a>
+              <a href="#"><i class="far fa-play-circle"></i></a>
+              <a href="#"><i class="fas fa-step-forward"></i></a>
+              <a href="#"><i class="fas fa-redo-alt"></i></a>
             </div>
 
           </div>
 
         </div>
-        <!-- Fine Playing Track -->
 
-        <!-- Player -->
-        <div class="player">
+        <div class="play-bar">
 
-          <div class="player-commands">
+          <div class="current-time">0:25</div>
 
-            <div class="player-commands-container">
-
-              <div class="player-commands-icons">
-                <a href="#"><i class="fas fa-random"></i></a>
-                <a href="#"><i class="fas fa-step-backward"></i></a>
-                <a href="#"><i class="far fa-play-circle"></i></a>
-                <a href="#"><i class="fas fa-step-forward"></i></a>
-                <a href="#"><i class="fas fa-redo-alt"></i></a>
-              </div>
-
+          <div class="track-bar">
+            <div class="current-time-bar">
+              <div class="circle"></div>
             </div>
-
           </div>
 
-          <div class="play-bar">
+          <div class="track-duration">4.35</div>
 
-            <div class="current-time">0:25</div>
+        </div>
 
-            <div class="track-bar">
-              <div class="current-time-bar">
+      </div>
+      <!-- Fine Player -->
+
+      <!-- Player Settings -->
+      <div class="player-settings">
+
+        <div class="footer-container-settings">
+
+          <div class="right-icons">
+            <a href="#"><i class="fas fa-list"></i></a>
+            <a href="#"><i class="fas fa-desktop"></i></a>
+          </div>
+
+          <div class="volume-control">
+            <a href="#"><i class="fas fa-volume-up"></i></a>
+            <div class="volume-bar">
+              <div class="current-volume">
                 <div class="circle"></div>
               </div>
             </div>
-
-            <div class="track-duration">4.35</div>
-
           </div>
 
-        </div>
-        <!-- Fine Player -->
-
-        <!-- Player Settings -->
-        <div class="player-settings">
-
-          <div class="footer-container-settings">
-
-            <div class="right-icons clearfix">
-              <a href="#"><i class="fas fa-list"></i></a>
-              <a href="#"><i class="fas fa-desktop"></i></a>
-            </div>
-
-            <div class="volume-control">
-              <a href="#"><i class="fas fa-volume-up"></i></a>
-              <div class="volume-bar">
-                <div class="current-volume">
-                  <div class="circle"></div>
-                </div>
-              </div>
-            </div>
-
-
-          </div>
 
         </div>
-        <!-- Fine Player Settings -->
 
-      </footer>
-      <!-- Fine FOOTER -->
+      </div>
+      <!-- Fine Player Settings -->
 
-    </div>
+    </footer>
+    <!-- Fine FOOTER -->
 
-  </body>
+  </div>
+
+</body>
+
 </html>
