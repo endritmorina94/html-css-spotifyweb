@@ -340,6 +340,7 @@ footer{
 
 .player-commands-icons a{
   margin-right: 30px;
+  color: white;
 }
 
 .player-commands-icons a:last-child{
@@ -349,6 +350,10 @@ footer{
 
 .player-commands-icons a:nth-child(3){
   font-size: 30px;
+}
+
+.player-commands-icons a:nth-child(3):hover{
+  transform: scale(1.1);
 }
 
 .play-bar{
