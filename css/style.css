@@ -350,7 +350,8 @@ footer{
 }
 
 .player-commands-icons a:nth-child(3){
-  font-size: 30px;
+  font-size: 38px;
+  margin: 0 38px 0 8px;
 }
 
 .player-commands-icons a:nth-child(3):hover{
