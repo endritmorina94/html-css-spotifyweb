@@ -382,6 +382,18 @@ footer{
   opacity: 0.6;
   width: 20%;
   height: 4px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.circle{
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border-radius: 50%;
+  display: none;
 }
 
 .track-bar:hover{
@@ -390,6 +402,11 @@ footer{
 
 .track-bar:hover .current-time-bar{
   opacity: 1;
+  background-color: #1CB955;
+}
+
+.track-bar:hover .circle{
+  display: block;
 }
 
 /* Player Settings */
@@ -439,7 +456,6 @@ footer{
   width: 70%;
   vertical-align: middle;
   border-radius: 4px;
-  overflow: hidden;
 }
 
 .current-volume{
@@ -447,6 +463,10 @@ footer{
   opacity: 0.6;
   width: 49%;
   height: 4px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .volume-bar:hover{
@@ -455,6 +475,11 @@ footer{
 
 .volume-bar:hover .current-volume{
   opacity: 1;
+  background-color: #1CB955;
+}
+
+.volume-bar:hover .circle{
+  display: block;
 }
 
 
