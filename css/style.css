@@ -8,6 +8,7 @@
 /* COMMON */
 body {
   font-family: 'Raleway', sans-serif;
+  min-width: 265px;
 }
 
 .app-wrapper {
@@ -814,44 +815,7 @@ footer {
 
 /* Bonus sezione Smartphone */
 @media screen and (max-width: 449px) {
-  .content{
-    height: calc(100vh - 50px);
-    width: 100%;
-  }
-
-  .upgrade{
-    display: none;
-  }
-
-  .top-nav-content{
-    overflow-x: auto;
-  }
-
-  .content-nav {
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    padding: 0 15px;
-    margin-top: 0;
-    width: 250%;
-  }
-
-  .content-nav li {
-    padding: 16px 10px;
-  }
-
-  .content-nav li::before, .active-top-nav::before {
-    bottom: 10px;
-  }
-
-  .smartphone-player{
-    display: block;
-    width: 100%;
-    height: 330px;
-    background-color: #000000;
-    padding-bottom: 100px;
-
-  }
-
+  /* FOOTER */
   footer{
     position: fixed;
     top: 290px;
@@ -871,10 +835,6 @@ footer {
     font-size: 60px;
   }
 
-  .player-commands-icons a:nth-child(3) i:hover{
-    filter: drop-shadow(0 0 2px rgba(28, 185, 85, 1));
-  }
-
   .player-commands-icons a:nth-child(3) i:active{
     transform: translateY(1px);
   }
@@ -883,6 +843,7 @@ footer {
     font-size: 18px;
   }
 
+  /* SIDE NAV */
   .logo img:nth-child(2),
   .now-playing,
   .play-bar,
@@ -939,7 +900,8 @@ footer {
     order: -1;
   }
 
-  .side-nav li::before {
+  .side-nav li::before,
+  .bottom-side-bar .user{
     display: none;
   }
 
@@ -949,10 +911,6 @@ footer {
 
   .side-top-nav {
     margin-left: 0;
-  }
-
-  .bottom-side-bar .user{
-    display: none;
   }
 
   .download-app {
@@ -968,8 +926,108 @@ footer {
     opacity: 0.35;
   }
 
+  /* MAIN */
   .content{
+    height: calc(100vh - 50px);
+    width: 100%;
     overflow-y: visible;
+  }
+
+  .upgrade{
+    display: none;
+  }
+
+  .top-nav-content{
+    overflow-x: auto;
+  }
+
+  .content-nav {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 0 15px;
+    margin-top: 0;
+    width: 250%;
+  }
+
+  .content-nav li {
+    padding: 16px 10px;
+  }
+
+  .content-nav li::before, .active-top-nav::before {
+    bottom: 10px;
+  }
+
+  .smartphone-player{
+    display: block;
+    width: 100%;
+    height: 338px;
+    background-color: #000000;
+    padding-bottom: 97px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .bg-img-player{
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/noemi.jpg");
+    background-size: cover;
+    filter: blur(4px);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .top-icons{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 100px);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 10px 20px;
+  }
+
+  .top-icons i{
+    color: white;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  }
+  
+  .song-played{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 3px;
+  }
+
+  .song-played-img{
+    width: 70%;
+    max-width: 255px;
+  }
+
+  .song-played-img img{
+    border-radius: 3px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  }
+
+  .song-played .album-info,
+  .song-played .album-author .author{
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  }
+
+  .song-played .album-info h4{
+    font-size: 22px;
+  }
+
+  .song-played .author{
+    font-size: 15px;
   }
 
   .music{
@@ -985,13 +1043,13 @@ footer {
     flex-direction: column;
   }
 
-  .album {
+  .album{
     width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
     border: 1px solid black;
     padding: 15px;
     border-radius: 10px;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
     margin-right: 0;
   }
 
@@ -1036,12 +1094,13 @@ footer {
     text-align: center;
   }
 
-
+  .author.intro{
+  margin-bottom: 15px;
+  }
 
   .recomended-playists,
   .popular-artists{
     margin-top: 15px;
   }
-
 
 }
