@@ -8,6 +8,7 @@
 /* COMMON */
 body {
   font-family: 'Raleway', sans-serif;
+  min-width: 450px;
 }
 
 .app-wrapper {
@@ -448,9 +449,7 @@ footer {
 
 /* Playing Track */
 .now-playing {
-  width: 15%;
-  max-width: 280px;
-  min-width: 220px;
+  width: 250px;
   padding: 0 15px;
 }
 
@@ -495,6 +494,8 @@ footer {
 /* Player */
 .player {
   flex-grow: 1;
+  width: calc(100% / 3);
+  min-width: 150px;
 }
 
 .footer-container-player {
@@ -509,9 +510,14 @@ footer {
   justify-content: center;
 }
 
+.player-commands-container{
+  width: 100%;
+}
+
 .player-commands-icons {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .player-commands-icons a {
@@ -548,7 +554,7 @@ footer {
 .track-bar {
   background-color: #717171;
   height: 4px;
-  width: 40%;
+  width: 61%;
   border-radius: 4px;
   margin: 6px 25px 0;
 }
@@ -587,42 +593,34 @@ footer {
 
 /* Player Settings */
 .player-settings {
-  width: 15%;
-  max-width: 280px;
-  min-width: 220px;
+  width: 250px;
   padding: 0 15px;
 }
 
 .footer-container-settings {
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 100%;
 }
 
-.right-icons {
-  text-align: right;
+.volume-control{
+  width: 71%;
+  margin-left: 3px
 }
 
 .right-icons i,
 .volume-control i {
-  margin-right: 12px;
   color: white;
   font-size: 15px;
-}
-
-.volume-control {
-  width: 68%;
-}
-
-.volume-control i {
-  margin-right: 10px;
+  margin-right: 12px;
 }
 
 .volume-bar {
   display: inline-block;
   background-color: #717171;
   height: 4px;
-  width: 70%;
+  width: 75%;
   vertical-align: middle;
   border-radius: 4px;
 }
@@ -664,6 +662,8 @@ footer {
 }
 
 @media all and (max-width: 767px) {
+
+  /* CONTENT */
   .pagace-btn {
     height: 40%;
     line-height: 40%;
@@ -677,26 +677,56 @@ footer {
     width: calc(100% / 2 - 15px);
   }
 
-  .now-playing {
-    padding-right: 0;
+  /* FOOTER */
+  .now-playing,
+  .player-settings{
+    width: calc(100% / 3);
+    min-width: 150px;
   }
 
-  .track-info {}
+  .now-playing .left-icons{
+    width: 18px;
+    margin-right: 20px;
+  }
+
+  .track-info a{
+    padding-right: 20px;
+  }
 
   .left-icons a {
     margin-left: 0;
   }
+
+  .player-commands-icons {
+    justify-content: space-between;
+  }
+
+  .player-commands-icons a,
+  .player-commands-icons a:nth-child(3) {
+    margin: 0 20px 0 0;
+  }
+
+  .track-bar{
+    margin: 6px 5px 0;
+  }
+
+  .right-icons{
+    margin-left: 20px;
+  }
+
+  .volume-control{
+    width: 48%;
+  }
+
+  .volume-bar {
+    width: 57%;
+  }
+
 }
 
 @media all and (max-width: 576px) {
 
-  /* .content-nav li{
-    margin-right: 15px;
-  }
-
-  .content-nav li a{
-    font-size: 13px;
-  } */
+  /* SIDE NAV */
   .side-bar {
     width: 60px;
     padding-right: 15px;
@@ -735,8 +765,48 @@ footer {
     width: 100%;
   }
 
+  /* CONTENT */
   .content,
   .upgrade {
     width: calc(100% - 60px);
+  }
+
+  /* FOOTER */
+  .now-playing .left-icons{
+    margin-right: 0;
+  }
+
+  .player-commands-icons a,
+  .player-commands-icons a:nth-child(3) {
+    margin: 0 10px 0 0;
+  }
+
+  .right-icons{
+    margin-left: 0;
+  }
+
+  .right-icons i,
+  .volume-control i {
+    margin-right: 5px;
+  }
+
+  .volume-control{
+    width: 59%;
+  }
+
+  .volume-bar{
+    width: 63%;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .track-info {
+    font-size: 10px;
+    padding-right: 2px;
+  }
+
+  .track-image img {
+    height: 40px;
+    width: auto;
   }
 }
