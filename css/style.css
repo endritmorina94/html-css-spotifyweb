@@ -66,7 +66,8 @@ ul {
   width: 70%;
 }
 
-.logo img:last-child {
+.logo img:last-child,
+.logo img:nth-child(2) {
   display: none;
 }
 
@@ -725,12 +726,13 @@ footer {
     padding-right: 15px;
   }
 
-  .logo img:last-child {
+  .logo img:nth-child(2) {
     display: block;
     width: 100%;
   }
 
-  .logo img:first-child,
+  .logo img:first-child
+  .logo img:last-child,
   .side-nav a,
   .logo img,
   .playlists-container,
@@ -820,11 +822,18 @@ footer {
     top: 40%;
   }
 
+  .logo img:nth-child(2),
   .now-playing,
   .play-bar,
   .player-settings{
     display: none;
   }
+
+  .logo img:last-child{
+    display: block;
+    width: 100%;
+  }
+
 
   .player-commands{
     height: 100%;
@@ -836,7 +845,7 @@ footer {
 
   .side-bar{
     float: none;
-    height: 70px;
+    height: 50px;
     width: 100%;
     position: absolute;
     left: 0;
@@ -846,7 +855,8 @@ footer {
   }
 
   .logo{
-    width: 50px;
+    width: 30px;
+    height: 50px;
     margin-right: 14px;
   }
 
@@ -862,7 +872,7 @@ footer {
   }
 
   .side-nav li img{
-    width: 50px;
+    width: 25px;
   }
 
   .side-nav li:nth-child(3){
