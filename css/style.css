@@ -857,7 +857,7 @@ footer {
   .logo{
     width: 30px;
     height: 50px;
-    margin-right: 14px;
+    margin-right: 6px;
   }
 
   .side-nav{
@@ -896,15 +896,16 @@ footer {
   }
 
   .download-app {
-    width: 59px;
+    width: 29px;
     height: 100%;
     display: flex;
     align-items: center;
-    margin-top: 2px;
+    margin-top: 1px;
   }
 
   .download-app img{
     width: 100%;
+    opacity: 0.35;
   }
 
 
