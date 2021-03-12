@@ -994,7 +994,7 @@ footer {
     color: white;
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
   }
-  
+
   .song-played{
     height: 100%;
     display: flex;
@@ -1032,9 +1032,9 @@ footer {
 
   .music{
     overflow-y: scroll;
-    height: calc(100% - 382px);
+    height: calc(100% - 389px);
     padding-top: 15px;
-    padding-bottom: 0;
+    padding-bottom: 20px;
   }
 
   .albums-container{
