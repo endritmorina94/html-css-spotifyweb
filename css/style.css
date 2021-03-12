@@ -1034,7 +1034,7 @@ footer {
     overflow-y: scroll;
     height: calc(100% - 389px);
     padding-top: 15px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
 
   .albums-container{
