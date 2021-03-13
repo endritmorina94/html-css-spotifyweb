@@ -270,7 +270,7 @@ ul {
   z-index: 1;
 }
 
-.pagace-btn {
+.update-btn {
   text-transform: uppercase;
   color: white;
   background-color: transparent;
@@ -281,9 +281,10 @@ ul {
   margin-right: 39px;
 }
 
-.pagace-btn:hover {
+.update-btn:hover {
   cursor: pointer;
   transform: scale(1.08);
+  transition-duration: 0.2s;
 }
 
 /* Content Section Nav */
@@ -543,6 +544,13 @@ footer {
 
 .player-commands-icons a:nth-child(3):hover {
   transform: scale(1.1);
+  transition-duration: 0.2s;
+}
+
+.player-commands-icons a:active,
+.player-commands-icons a:nth-child(3):active,
+.update-btn:active{
+  transform: translateY(1px);
 }
 
 .play-bar {
@@ -832,21 +840,33 @@ footer {
   }
 
   .player-commands-icons a:nth-child(3){
-    font-size: 60px;
-  }
-
-  .player-commands-icons a:nth-child(3) i:active{
-    transform: translateY(1px);
+    font-size: 57px;
   }
 
   .player-commands-icons a:last-child{
-    font-size: 18px;
+    font-size: 19px;
+  }
+
+  .play-bar{
+    display: flex;
+    padding: 0 20px;
+  }
+
+  .player-commands{
+    height: 70%;
+  }
+
+  .player-commands-icons {
+    justify-content: space-evenly;
+  }
+
+  .track-bar{
+    width: 70%;
   }
 
   /* SIDE NAV */
   .logo img:nth-child(2),
   .now-playing,
-  .play-bar,
   .player-settings{
     display: none;
   }
@@ -854,14 +874,6 @@ footer {
   .logo img:last-child{
     display: block;
     width: 100%;
-  }
-
-  .player-commands{
-    height: 100%;
-  }
-
-  .player-commands-icons {
-    justify-content: space-evenly;
   }
 
   .side-bar{
@@ -873,12 +885,13 @@ footer {
     bottom: 0;
     z-index: 1;
     flex-direction: row;
+    padding: 0 20px;
   }
 
   .logo{
     width: 30px;
     height: 50px;
-    margin-right: 6px;
+    margin-right: 7px;
   }
 
   .side-nav{
@@ -938,37 +951,21 @@ footer {
   }
 
   .top-nav-content{
-    overflow-x: auto;
-    background-color: #000000;
-  }
-
-  .content-nav {
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    padding: 0 15px;
-    margin-top: 0;
-    width: 250%;
-  }
-
-  .content-nav li {
-    padding: 16px 10px;
-  }
-
-  .content-nav li::before, .active-top-nav::before {
-    bottom: 10px;
+    display: none;
   }
 
   .smartphone-player{
     display: block;
     width: 100%;
-    height: 338px;
+    height: 390px;
     background-color: #000000;
-    padding-bottom: 97px;
+    padding-bottom: 99px;
     position: relative;
     overflow: hidden;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
   }
 
-  .bg-img-player{
+  .bg-img-blurred{
     width: 100%;
     height: 100%;
     background-image: url("../img/noemi.jpg");
@@ -985,10 +982,19 @@ footer {
     left: 0;
     width: 100%;
     height: calc(100% - 100px);
+    padding: 10px 20px;
+  }
+
+  .up-top-icons{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .bottom-top-icons{
+    height: calc(100% - 19px);
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 10px 20px;
   }
 
   .top-icons i{
@@ -1003,11 +1009,15 @@ footer {
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-top: 3px;
   }
 
-  .song-played-img{
-    width: 70%;
+  .song-played-content{
+    margin-top: 10%;
+  }
+
+  .song-played-img,
+  .song-played .album-info{
+    width: 100%;
     max-width: 255px;
   }
 
@@ -1034,7 +1044,7 @@ footer {
   .music{
     overflow-y: scroll;
     height: calc(100% - 389px);
-    padding-top: 15px;
+    padding-top: 7px;
     padding-bottom: 10px;
   }
 
