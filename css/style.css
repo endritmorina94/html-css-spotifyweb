@@ -29,6 +29,7 @@ body, a {
 
 body a:hover {
   color: white;
+  transition-duration: 0.5s;
 }
 
 ul {
@@ -126,6 +127,7 @@ ul {
 .side-nav .active-side-nav,
 .side-nav li:hover {
   opacity: 1;
+  transition-duration: 0.5s;
 }
 
 .side-nav a {
@@ -167,10 +169,17 @@ ul {
 .add-playlist {
   margin-top: 15px;
   line-height: 38px;
+  cursor: pointer;
 }
 
-.add-playlist a:hover .cross {
+.add-playlist:hover .cross {
   background-color: white;
+  transition-duration: 0.5s;
+}
+
+.add-playlist:hover a {
+  color: white;
+  transition-duration: 0.5s;
 }
 
 .bottom-playlists {
@@ -185,6 +194,12 @@ ul {
 
 .playlist-list li {
   margin-top: 16.5px;
+  cursor: pointer;
+}
+
+.playlist-list li:hover a{
+  color: white;
+  transition-duration: 0.5s;
 }
 
 /* Bottom Side Bar */
@@ -193,6 +208,7 @@ ul {
   padding-bottom: 7px;
   font-size: 14px;
   border-bottom: 1px solid #717171;
+  cursor: pointer;
 }
 
 .download-app img {
@@ -205,14 +221,12 @@ ul {
 
 .download-app:hover img {
   opacity: 1;
+  transition-duration: 0.5s;
 }
 
 .download-app:hover a {
   color: white;
-}
-
-.download-app:hover {
-  cursor: pointer;
+  transition-duration: 0.5s;
 }
 
 .user {
@@ -270,7 +284,7 @@ ul {
   z-index: 1;
 }
 
-.update-btn {
+.upgrade-btn {
   text-transform: uppercase;
   color: white;
   background-color: transparent;
@@ -281,7 +295,7 @@ ul {
   margin-right: 39px;
 }
 
-.update-btn:hover {
+.upgrade-btn:hover {
   cursor: pointer;
   transform: scale(1.08);
   transition-duration: 0.2s;
@@ -304,6 +318,11 @@ ul {
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
   overflow: hidden;
+}
+
+.content-nav li:hover a{
+  color: white;
+  transition-duration: 0.5s;
 }
 
 .content-nav li:before,
@@ -549,7 +568,7 @@ footer {
 
 .player-commands-icons a:active,
 .player-commands-icons a:nth-child(3):active,
-.update-btn:active{
+.upgrade-btn:active{
   transform: translateY(1px);
 }
 
