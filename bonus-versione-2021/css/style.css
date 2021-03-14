@@ -549,7 +549,7 @@ footer {
   font-size: 12px;
   margin-right: 27px;
   color: white;
-  opacity: 0.7;
+  opacity: 0.3;
 }
 
 .player-commands-icons a:hover {
@@ -567,7 +567,7 @@ footer {
 }
 
 .player-commands-icons a:nth-child(3) {
-  font-size: 12px;
+  font-size: 11px;
   color: black;
   background-color: white;
   width: 30px;
