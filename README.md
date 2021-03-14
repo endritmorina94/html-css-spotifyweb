@@ -1,4 +1,12 @@
 # html-css-spotifyweb
-##Spotify WebApp Clone
+##Spotify WebApp Clone Preview
 
-###LG Breakpoint
+###Large Breakpoint ≥992px
+
+###Medium Breakpoint ≥768px
+
+###Small Breakpoint ≥577px
+
+###Extra Small Breakpoint ≥450px
+
+####Bonus: Smartphone Layout <499px
