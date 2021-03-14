@@ -2,7 +2,7 @@
 ##Spotify WebApp Clone Preview
 
 ###Large Breakpoint ≥992px
-![Large Breakpoint](/img/preview/spotify-lg-preview.png)
+![Large Breakpoint](/img/previews/spotify-lg-preview.png)
 
 
 ###Medium Breakpoint ≥768px
