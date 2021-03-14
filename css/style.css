@@ -595,7 +595,7 @@ footer {
 .current-time-bar {
   background-color: white;
   opacity: 0.6;
-  width: 20%;
+  width: 9%;
   height: 4px;
   border-radius: 4px;
   display: flex;
@@ -661,7 +661,7 @@ footer {
 .current-volume {
   background-color: white;
   opacity: 0.6;
-  width: 49%;
+  width: 30%;
   height: 4px;
   border-radius: 4px;
   display: flex;
