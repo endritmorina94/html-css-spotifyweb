@@ -17,6 +17,6 @@
 ![Extra Small Breakpoint](/img/previews/spotify-xs-preview.png "Extra Small Breakpoint")
 
 
-#### Bonus: Smartphone Layout <499px  
+#### Bonus: Smartphone Layout <449px  
 ![Smartphone Breakpoint](/img/previews/spotify-smartphone-preview.png "Smartphone Breakpoint")
 
