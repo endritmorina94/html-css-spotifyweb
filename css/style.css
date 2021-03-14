@@ -910,7 +910,7 @@ footer {
   .logo{
     width: 30px;
     height: 50px;
-    margin-right: 7px;
+    margin-right: 8px;
   }
 
   .side-nav{
@@ -946,11 +946,11 @@ footer {
   }
 
   .download-app {
-    width: 29px;
+    width: 31px;
     height: 100%;
     display: flex;
     align-items: center;
-    margin-top: 1px;
+    margin-bottom: 1px;
   }
 
   .download-app img{
