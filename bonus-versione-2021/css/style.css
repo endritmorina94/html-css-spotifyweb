@@ -579,6 +579,10 @@ footer {
   opacity: 1;
 }
 
+.player-commands-icons a:nth-child(3) i{
+  margin-left: 3px;
+}
+
 .player-commands-icons a:nth-child(3):hover {
   transform: scale(1.1);
   transition-duration: 0.2s;
