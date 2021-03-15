@@ -20,3 +20,6 @@
 #### Bonus: Smartphone Layout <449px  
 ![Smartphone Breakpoint](/img/previews/spotify-smartphone-preview.png "Smartphone Breakpoint")
 
+
+#### Bonus: Layout 2021  
+![Layout 2021](/img/previews/spotify-2021-preview.png "Layout 2021")
