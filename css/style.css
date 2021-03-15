@@ -55,8 +55,8 @@ ul {
 .volume-bar {
   cursor: pointer;
 }
-
 /* FINE COMMON */
+
 /* MAIN */
 /* MAIN's > Side Bar */
 .side-bar {
@@ -258,8 +258,8 @@ ul {
   margin-left: 5px;
   line-height: 25px;
 }
-
 /* Fine MAIN's > Side Bar */
+
 /* MAIN's > Content */
 .content {
   width: calc(100% - 250px);
@@ -452,9 +452,9 @@ ul {
 .popular-artists .album-img img {
   border-radius: 50%;
 }
-
 /* Fine MAIN's > Content */
 /* FINE MAIN */
+
 /* FOOTER */
 footer {
   width: 100%;
@@ -665,10 +665,12 @@ footer {
 .volume-bar:hover .circle {
   display: block;
 }
-
 /* FINE FOOTER */
+
 /* SEZIONE RESPONSIVE */
 @media all and (max-width: 991px) {
+
+  /* CONTENT */
   .albums-container {
     flex-wrap: wrap;
   }
@@ -825,46 +827,6 @@ footer {
 /* Bonus sezione Smartphone */
 @media screen and (max-width: 449px) {
 
-  /* FOOTER */
-  footer {
-    position: fixed;
-    top: 290px;
-    background-color: #000000;
-  }
-
-  .player-commands-icons {
-    justify-content: space-between;
-  }
-
-  .player-commands-icons a {
-    font-size: 20px;
-  }
-
-  .player-commands-icons a:nth-child(3) {
-    font-size: 57px;
-  }
-
-  .player-commands-icons a:last-child {
-    font-size: 19px;
-  }
-
-  .play-bar {
-    display: flex;
-    padding: 0 20px;
-  }
-
-  .player-commands {
-    height: 70%;
-  }
-
-  .player-commands-icons {
-    justify-content: space-evenly;
-  }
-
-  .track-bar {
-    width: 70%;
-  }
-
   /* SIDE NAV */
   .logo img:nth-child(2),
   .now-playing,
@@ -940,7 +902,7 @@ footer {
     opacity: 0.35;
   }
 
-  /* MAIN */
+  /* CONTENT */
   .content {
     height: calc(100vh - 50px);
     width: 100%;
@@ -1113,5 +1075,45 @@ footer {
   .recomended-playists,
   .popular-artists {
     margin-top: 15px;
+  }
+
+  /* FOOTER */
+  footer {
+    position: fixed;
+    top: 290px;
+    background-color: #000000;
+  }
+
+  .player-commands-icons {
+    justify-content: space-between;
+  }
+
+  .player-commands-icons a {
+    font-size: 20px;
+  }
+
+  .player-commands-icons a:nth-child(3) {
+    font-size: 57px;
+  }
+
+  .player-commands-icons a:last-child {
+    font-size: 19px;
+  }
+
+  .play-bar {
+    display: flex;
+    padding: 0 20px;
+  }
+
+  .player-commands {
+    height: 70%;
+  }
+
+  .player-commands-icons {
+    justify-content: space-evenly;
+  }
+
+  .track-bar {
+    width: 70%;
   }
 }

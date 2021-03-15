@@ -99,8 +99,8 @@ ul {
 ::-webkit-scrollbar-thumb:active {
   background: #c4bdbd;
 }
-
 /* FINE COMMON */
+
 /* MAIN */
 /* MAIN's > Side Bar */
 .side-bar {
@@ -238,8 +238,8 @@ ul {
   position: relative;
   top: 2px;
 }
-
 /* Fine MAIN's > Side Bar */
+
 /* MAIN's > Content */
 .content {
   width: calc(100% - 260px);
@@ -443,9 +443,9 @@ ul {
 .popular-artists h2 {
   margin-bottom: 10px;
 }
-
 /* Fine MAIN's > Content */
 /* FINE MAIN */
+
 /* FOOTER */
 footer {
   width: 100%;
@@ -670,8 +670,8 @@ footer {
 .volume-bar:hover .circle {
   display: block;
 }
-
 /* FINE FOOTER */
+
 /* SEZIONE RESPONSIVE */
 @media all and (max-width: 1495px) {
   .album {
