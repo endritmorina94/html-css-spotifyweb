@@ -27,9 +27,12 @@ body, a {
   font-weight: 600;
 }
 
+body a {
+  transition: color 0.5s;
+}
+
 body a:hover {
   color: white;
-  transition-duration: 0.5s;
 }
 
 ul {
@@ -55,8 +58,8 @@ ul {
 .volume-bar {
   cursor: pointer;
 }
-/* FINE COMMON */
 
+/* FINE COMMON */
 /* MAIN */
 /* MAIN's > Side Bar */
 .side-bar {
@@ -106,6 +109,7 @@ ul {
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
   overflow: hidden;
+  transition: opacity 0.5s;
 }
 
 .side-nav li:before {
@@ -133,7 +137,6 @@ ul {
 .side-nav .active-side-nav,
 .side-nav li:hover {
   opacity: 1;
-  transition-duration: 0.5s;
 }
 
 .side-nav a {
@@ -170,6 +173,7 @@ ul {
   display: inline-block;
   vertical-align: bottom;
   margin-right: 5px;
+  transition: background-color 0.5s;
 }
 
 .add-playlist {
@@ -179,12 +183,14 @@ ul {
 
 .add-playlist:hover .cross {
   background-color: white;
-  transition-duration: 0.5s;
+}
+
+.add-playlist a {
+  transition: color 0.5s;
 }
 
 .add-playlist:hover a {
   color: white;
-  transition-duration: 0.5s;
 }
 
 .bottom-playlists {
@@ -220,16 +226,19 @@ ul {
   vertical-align: middle;
   margin-right: 5px;
   margin-left: -4px;
+  transition: opacity 0.5s
 }
 
 .download-app:hover img {
-  opacity: 1;
-  transition-duration: 0.5s;
+  opacity: 1;;
+}
+
+.download-app a {
+  transition: color 0.5s;
 }
 
 .download-app:hover a {
   color: white;
-  transition-duration: 0.5s;
 }
 
 .user {
@@ -258,8 +267,8 @@ ul {
   margin-left: 5px;
   line-height: 25px;
 }
-/* Fine MAIN's > Side Bar */
 
+/* Fine MAIN's > Side Bar */
 /* MAIN's > Content */
 .content {
   width: calc(100% - 250px);
@@ -291,11 +300,11 @@ ul {
   border-radius: 30px;
   padding: 12px 35px;
   margin-right: 39px;
+  transition: transform 0.2s;
 }
 
 .upgrade-btn:hover {
   transform: scale(1.08);
-  transition-duration: 0.2s;
 }
 
 /* Content Section Nav */
@@ -317,9 +326,12 @@ ul {
   overflow: hidden;
 }
 
+.content-nav li a {
+  transition: color 0.5s;
+}
+
 .content-nav li:hover a {
   color: white;
-  transition-duration: 0.5s;
 }
 
 .content-nav li:before,
@@ -452,9 +464,9 @@ ul {
 .popular-artists .album-img img {
   border-radius: 50%;
 }
+
 /* Fine MAIN's > Content */
 /* FINE MAIN */
-
 /* FOOTER */
 footer {
   width: 100%;
@@ -665,8 +677,8 @@ footer {
 .volume-bar:hover .circle {
   display: block;
 }
-/* FINE FOOTER */
 
+/* FINE FOOTER */
 /* SEZIONE RESPONSIVE */
 @media all and (max-width: 991px) {
 
@@ -1025,12 +1037,6 @@ footer {
     border-radius: 10px;
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
     margin-right: 0;
-  }
-
-  .album:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
-    transition-duration: 0.7s;
   }
 
   .overlay {
