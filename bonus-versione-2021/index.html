@@ -2,517 +2,542 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SpotifyWeb</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpotifyWeb</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <!-- APP CONTAINER -->
-  <div class="app-wrapper">
-    <!-- MAIN -->
-    <main>
-      <!-- Side Bar -->
-      <section class="side-bar">
-        <!-- Logo -->
-        <div class="logo-container">
+    <!-- APP CONTAINER -->
+    <div class="app-wrapper">
+        <!-- MAIN -->
+        <main>
+            <!-- Side Bar -->
+            <section class="side-bar">
+                <!-- Logo -->
+                <div class="logo-container">
 
-          <div class="logo">
-            <img src="img/logo.svg" alt="Spotify's Logo">
-            <img src="img/logo-small.svg" alt="Spotify's Small Logo">
-            <img src="img/logo-small-green.svg" alt="Spotify's Small Logo">
-          </div>
-
-        </div>
-        <!-- Fine Logo -->
-
-        <!-- Top Nav -->
-        <nav class="side-top-nav">
-
-          <ul class="side-nav">
-
-            <li class="active-side-nav">
-              <img src="img/home.svg" alt="Home">
-              <a href="#">Home</a>
-            </li>
-
-            <li>
-              <img src="img/search.svg" alt="Search">
-              <a href="#">Cerca</a>
-            </li>
-
-            <li>
-              <img src="img/libreria.svg" alt="Libreria">
-              <a href="#">La tua libreria</a>
-            </li>
-
-          </ul>
-
-        </nav>
-        <!-- Fine Top Nav -->
-
-        <!-- Playlists -->
-        <div class="playlists-container">
-
-          <div class="top-playlists">
-
-            <div class="title">
-              Playlist
-            </div>
-
-            <div class="add-playlist">
-              <a href="#">
-                <span class="cross">+</span>
-                Crea playlist
-              </a>
-            </div>
-
-            <div class="favorite-music">
-              <a href="#">
-                <span class="heart">
-                  <i class="fas fa-heart"></i>
-                </span>
-                Brani preferiti
-              </a>
-            </div>
-
-          </div>
-
-        </div>
-        <!-- Fine Playlists -->
-
-        <!-- Bottom Side Bar -->
-        <div class="bottom-side-bar">
-
-          <div class="bottom-side-bar-container">
-            <div class="download-app">
-              <img src="img/download.svg" alt="download icon">
-              <a href="#">
-                Installa app
-              </a>
-            </div>
-          </div>
-
-        </div>
-        <!-- Fine Bottom Side Bar -->
-      </section>
-      <!-- Fine Side Bar -->
-
-      <!-- CONTENT -->
-      <section class="content">
-        <!-- Upgrade Section -->
-        <div class="fixed-top-bar">
-
-          <div class="left-buttons">
-
-            <div class="arrow">
-              <div class="circle-top">
-                <i class="fas fa-chevron-left"></i>
-              </div>
-            </div>
-
-            <div class="arrow">
-              <div class="circle-top">
-                <i class="fas fa-chevron-right"></i>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="right-buttons">
-
-            <button class="upgrade-btn">
-              Effettua l'upgrade
-            </button>
-
-            <div class="user-btn">
-              <div class="user-profile-img">
-                <img src="img/profile.svg" alt="img-profile">
-              </div>
-              <a href="#">John Doe</a>
-              <i class="fas fa-sort-down"></i>
-            </div>
-
-          </div>
-
-        </div>
-        <!-- Fine Upgrade Section -->
-
-        <!-- MUSIC -->
-        <div class="music">
-          <!-- Ascoltate di recente -->
-          <div class="recently-played">
-
-            <h2>Ascoltate di recente</h2>
-            <!-- Contenitore Album -->
-            <div class="albums-container">
-              <!-- Single Album -->
-              <div class="album">
-
-                <div class="album-content">
-                  <div class="album-img">
-                    <img src="img/maneskin.png" alt="Maneskin Album Cover">
-                    <div class="overlay">
-                      <i class="fas fa-play"></i>
+                    <div class="logo">
+                        <img src="img/logo.svg" alt="Spotify's Logo">
+                        <img src="img/logo-small.svg" alt="Spotify's Small Logo">
+                        <img src="img/logo-small-green.svg" alt="Spotify's Small Logo">
                     </div>
-                  </div>
 
-                  <div class="album-info">
-                    <div class="album-name">
-                      <h4>Maneskin</h4>
+                </div>
+                <!-- Fine Logo -->
+
+                <!-- Top Nav -->
+                <nav class="side-top-nav">
+
+                    <ul class="side-nav">
+
+                        <li class="active-side-nav">
+                            <img src="img/home.svg" alt="Home">
+                            <a href="#">Home</a>
+                        </li>
+
+                        <li>
+                            <img src="img/search.svg" alt="Search">
+                            <a href="#">Cerca</a>
+                        </li>
+
+                        <li>
+                            <img src="img/libreria.svg" alt="Libreria">
+                            <a href="#">La tua libreria</a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- Fine Top Nav -->
+
+                <!-- Playlists -->
+                <div class="playlists-container">
+
+                    <div class="top-playlists">
+
+                        <div class="title">
+                            Playlist
+                        </div>
+
+                        <div class="add-playlist">
+                            <a href="#">
+                                <span class="cross">+</span>
+                                Crea playlist
+                            </a>
+                        </div>
+
+                        <div class="favorite-music">
+                            <a href="#">
+                                <span class="heart">
+                                    <i class="fas fa-heart"></i>
+                                </span>
+                                Brani preferiti
+                            </a>
+                        </div>
+
                     </div>
-                    <div class="album-author">
-                      <p class="author">Zitti e Buoni</p>
+
+                </div>
+                <!-- Fine Playlists -->
+
+                <!-- Bottom Side Bar -->
+                <div class="bottom-side-bar">
+
+                    <div class="bottom-side-bar-container">
+                        <div class="download-app">
+                            <img src="img/download.svg" alt="download icon">
+                            <a href="#">
+                                Installa app
+                            </a>
+                        </div>
                     </div>
-                  </div>
+
+                </div>
+                <!-- Fine Bottom Side Bar -->
+            </section>
+            <!-- Fine Side Bar -->
+
+            <!-- CONTENT -->
+            <section class="content">
+                <!-- Upgrade Section -->
+                <div class="fixed-top-bar">
+
+                    <div class="left-buttons">
+
+                        <div class="arrow">
+                            <div class="circle-top">
+                                <i class="fas fa-chevron-left"></i>
+                            </div>
+                        </div>
+
+                        <div class="arrow">
+                            <div class="circle-top">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="right-buttons">
+
+                        <button class="upgrade-btn">
+                            Effettua l'upgrade
+                        </button>
+
+                        <div class="user-btn">
+                            <div class="user-profile-img">
+                                <img src="img/profile.svg" alt="img-profile">
+                            </div>
+                            <a href="#">John Doe</a>
+                            <i class="fas fa-sort-down"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- Fine Upgrade Section -->
+
+                <!-- MUSIC -->
+                <div class="music">
+                    <!-- Ascoltate di recente -->
+                    <div class="recently-played">
+
+                        <h2>Ascoltate di recente</h2>
+                        <!-- Contenitore Album -->
+                        <div class="albums-container">
+                            <!-- Single Album -->
+                            <div class="album">
+
+                                <div class="album-content">
+                                    <div class="album-img">
+                                        <img src="img/maneskin.png" alt="Maneskin Album Cover">
+                                        <div class="overlay">
+                                            <i class="fas fa-play"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="album-info">
+                                        <div class="album-name">
+                                            <h4>Maneskin</h4>
+                                        </div>
+                                        <div class="album-author">
+                                            <p class="author">Zitti e Buoni</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <!-- Fine single Album -->
+
+                            <!-- Single Album -->
+                            <div class="album">
+
+                                <div class="album-content">
+                                    <div class="album-img">
+                                        <img src="img/lo-stato-sociale.jpg" alt="Stato Sociale Album Cover">
+                                        <div class="overlay">
+                                            <i class="fas fa-play"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="album-info">
+                                        <div class="album-name">
+                                            <h4>Lo Stato Sociale</h4>
+                                        </div>
+                                        <div class="album-author">
+                                            <p class="author">Combat Pop</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <!-- Fine single Album -->
+
+                            <!-- Single Album -->
+                            <div class="album">
+
+                                <div class="album-content">
+                                    <div class="album-img">
+                                        <img src="img/noemi.jpg" alt="Noemi Album Cover">
+                                        <div class="overlay">
+                                            <i class="fas fa-play"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="album-info">
+                                        <div class="album-name">
+                                            <h4>Noemi</h4>
+                                        </div>
+                                        <div class="album-author">
+                                            <p class="author">Glicine</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- Fine single Album -->
+
+                            <!-- Single Album -->
+                            <div class="album">
+
+                                <div class="album-content">
+                                    <div class="album-img">
+                                        <img src="img/madame.jpg" alt="Madame Album Cover">
+                                        <div class="overlay">
+                                            <i class="fas fa-play"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="album-info">
+                                        <div class="album-name">
+                                            <h4>Madame</h4>
+                                        </div>
+                                        <div class="album-author">
+                                            <p class="author">Voce</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- Fine single Album -->
+
+                            <!-- Single Album -->
+                            <div class="album">
+
+                                <div class="album-content">
+                                    <div class="album-img">
+                                        <img src="img/ermal-meta.jpg" alt="Ermal Meta Album Cover">
+                                        <div class="overlay">
+                                            <i class="fas fa-play"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="album-info">
+                                        <div class="album-name">
+                                            <h4>Ermal Meta</h4>
+                                        </div>
+                                        <div class="album-author">
+                                            <p class="author">Un milione di cose da dirti</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- Fine single Album -->
+
+                            <!-- Single Album -->
+                            <div class="album">
+
+                                <div class="album-content">
+                                    <div class="album-img">
+                                        <img src="img/annalisa.jpg" alt="Annalisa Album Cover">
+                                        <div class="overlay">
+                                            <i class="fas fa-play"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="album-info">
+                                        <div class="album-name">
+                                            <h4>Annalisa</h4>
+                                        </div>
+                                        <div class="album-author">
+                                            <p class="author">Dieci</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- Fine single Album -->
+
+                            <!-- Single Album -->
+                            <div class="album">
+
+                                <div class="album-content">
+                                    <div class="album-img">
+                                        <img src="img/fedez.jpg" alt="Fedez Album Cover">
+                                        <div class="overlay">
+                                            <i class="fas fa-play"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="album-info">
+                                        <div class="album-name">
+                                            <h4>Fedez, Francesca Michielin</h4>
+                                        </div>
+                                        <div class="album-author">
+                                            <p class="author">Chiamami per nome</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- Fine single Album -->
+
+                        </div>
+                        <!-- Contenitore Album -->
+                    </div>
+                    <!-- Fine Ascoltate di recente -->
+
+                    <!-- Album raccomandati -->
+                    <div class="recomended-playists">
+
+                        <h2>Creato per John Doe</h2>
+
+                        <p class="author intro">
+                            Più ascolti, più accurati saranno i suggerimenti
+                        </p>
+
+                        <!-- Contenitore Album -->
+                        <div class="albums-container">
+                            <!-- Single Album -->
+                            <div class="album">
+
+                                <div class="album-content">
+                                    <div class="album-img">
+                                        <img src="img/sanremo.jpg" alt="Sanremo 2021 Album Cover">
+                                        <div class="overlay">
+                                            <i class="fas fa-play"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="album-info">
+                                        <div class="album-name">
+                                            <h4>Sanremo 2021</h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- Fine single Album -->
+
+                            <!-- Single Album -->
+                            <div class="album">
+
+                                <div class="album-content">
+                                    <div class="album-img">
+                                        <img src="img/mixdaily.jpeg" alt="Daily Mix Album Cover">
+                                        <div class="overlay">
+                                            <i class="fas fa-play"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="album-info">
+                                        <div class="album-name">
+                                            <h4>Daily Mix 1</h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- Fine single Album -->
+                        </div>
+                        <!-- Fine Contenitore Album -->
+                    </div>
+                    <!-- Fine Album raccomandati -->
+
+                    <!-- Artisti Popolari -->
+                    <div class="popular-artists">
+
+                        <h2>Artisti più popolari</h2>
+
+                        <p class="author intro">
+                            Più ascolti, più accurati saranno i suggerimenti
+                        </p>
+
+                        <!-- Contenitore Album -->
+                        <div class="albums-container">
+                            <!-- Single Album -->
+                            <div class="album">
+
+                                <div class="album-content">
+                                    <div class="album-img">
+                                        <img src="img/youg.jpeg" alt="Lana Del Rey Picture">
+                                        <div class="overlay">
+                                            <i class="fas fa-play"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="album-info">
+                                        <div class="album-name">
+                                            <h4>Release Radar</h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- Fine single Album -->
+
+                            <!-- Single Album -->
+                            <div class="album">
+
+                                <div class="album-content">
+                                    <div class="album-img">
+                                        <img src="img/einaudi.jpeg" alt="Ludovico Einaudi Picture">
+                                        <div class="overlay">
+                                            <i class="fas fa-play"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="album-info">
+                                        <div class="album-name">
+                                            <h4>Daily Mix 1</h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- Fine single Album -->
+                        </div>
+                        <!-- Fine Contenitore Album -->
+                    </div>
+                    <!-- Fine Artisti Popolari -->
+                </div>
+                <!-- Fine MUSIC -->
+            </section>
+            <!-- Fine CCONTENT -->
+        </main>
+        <!-- Fine MAIN -->
+
+
+        <!-- FOOTER -->
+        <footer>
+            <!-- Playing Track -->
+            <div class="now-playing">
+
+                <div class="footer-container-track">
+
+                    <div class="track-image">
+                        <img src="img/maneskin.png" alt="Album image">
+                    </div>
+
+                    <div class="track-info">
+                        <span>Maneskin</span><br>
+                        <a href="#">Zitti e Buoni</a>
+                    </div>
+
+                    <div class="left-icons">
+                        <a href="#"><i class="far fa-heart"></i></a>
+                        <a href="#"><i class="far fa-folder"></i></a>
+                    </div>
 
                 </div>
 
-              </div>
-              <!-- Fine single Album -->
-
-              <!-- Single Album -->
-              <div class="album">
-
-                <div class="album-content">
-                  <div class="album-img">
-                    <img src="img/lo-stato-sociale.jpg" alt="Stato Sociale Album Cover">
-                    <div class="overlay">
-                      <i class="fas fa-play"></i>
-                    </div>
-                  </div>
-
-                  <div class="album-info">
-                    <div class="album-name">
-                      <h4>Lo Stato Sociale</h4>
-                    </div>
-                    <div class="album-author">
-                      <p class="author">Combat Pop</p>
-                    </div>
-                  </div>
-
-                </div>
-
-              </div>
-              <!-- Fine single Album -->
-
-              <!-- Single Album -->
-              <div class="album">
-
-                <div class="album-content">
-                  <div class="album-img">
-                    <img src="img/noemi.jpg" alt="Noemi Album Cover">
-                    <div class="overlay">
-                      <i class="fas fa-play"></i>
-                    </div>
-                  </div>
-
-                  <div class="album-info">
-                    <div class="album-name">
-                      <h4>Noemi</h4>
-                    </div>
-                    <div class="album-author">
-                      <p class="author">Glicine</p>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-              <!-- Fine single Album -->
-
-              <!-- Single Album -->
-              <div class="album">
-
-                <div class="album-content">
-                  <div class="album-img">
-                    <img src="img/madame.jpg" alt="Madame Album Cover">
-                    <div class="overlay">
-                      <i class="fas fa-play"></i>
-                    </div>
-                  </div>
-
-                  <div class="album-info">
-                    <div class="album-name">
-                      <h4>Madame</h4>
-                    </div>
-                    <div class="album-author">
-                      <p class="author">Voce</p>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-              <!-- Fine single Album -->
-
-              <!-- Single Album -->
-              <div class="album">
-
-                <div class="album-content">
-                  <div class="album-img">
-                    <img src="img/ermal-meta.jpg" alt="Ermal Meta Album Cover">
-                    <div class="overlay">
-                      <i class="fas fa-play"></i>
-                    </div>
-                  </div>
-
-                  <div class="album-info">
-                    <div class="album-name">
-                      <h4>Ermal Meta</h4>
-                    </div>
-                    <div class="album-author">
-                      <p class="author">Un milione di cose da dirti</p>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-              <!-- Fine single Album -->
-
-              <!-- Single Album -->
-              <div class="album">
-
-                <div class="album-content">
-                  <div class="album-img">
-                    <img src="img/annalisa.jpg" alt="Annalisa Album Cover">
-                    <div class="overlay">
-                      <i class="fas fa-play"></i>
-                    </div>
-                  </div>
-
-                  <div class="album-info">
-                    <div class="album-name">
-                      <h4>Annalisa</h4>
-                    </div>
-                    <div class="album-author">
-                      <p class="author">Dieci</p>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-              <!-- Fine single Album -->
             </div>
-            <!-- Contenitore Album -->
-          </div>
-          <!-- Fine Ascoltate di recente -->
+            <!-- Fine Playing Track -->
 
-          <!-- Album raccomandati -->
-          <div class="recomended-playists">
+            <!-- Player -->
+            <div class="player">
 
-            <h2>Creato per John Doe</h2>
+                <div class="player-commands">
 
-            <p class="author intro">
-              Più ascolti, più accurati saranno i suggerimenti
-            </p>
+                    <div class="player-commands-container">
 
-            <!-- Contenitore Album -->
-            <div class="albums-container">
-              <!-- Single Album -->
-              <div class="album">
+                        <div class="player-commands-icons">
+                            <a href="#"><i class="fas fa-random"></i></a>
+                            <a href="#"><i class="fas fa-step-backward"></i></a>
+                            <a href="#"><i class="fas fa-play"></i></a>
+                            <a href="#"><i class="fas fa-step-forward"></i></a>
+                            <a href="#"><i class="fas fa-redo-alt"></i></a>
+                        </div>
 
-                <div class="album-content">
-                  <div class="album-img">
-                    <img src="img/sanremo.jpg" alt="Sanremo 2021 Album Cover">
-                    <div class="overlay">
-                      <i class="fas fa-play"></i>
                     </div>
-                  </div>
 
-                  <div class="album-info">
-                    <div class="album-name">
-                      <h4>Sanremo 2021</h4>
-                    </div>
-                  </div>
                 </div>
 
-              </div>
-              <!-- Fine single Album -->
+                <div class="play-bar">
 
-              <!-- Single Album -->
-              <div class="album">
+                    <div class="current-time">0:25</div>
 
-                <div class="album-content">
-                  <div class="album-img">
-                    <img src="img/mixdaily.jpeg" alt="Daily Mix Album Cover">
-                    <div class="overlay">
-                      <i class="fas fa-play"></i>
+                    <div class="track-bar">
+                        <div class="current-time-bar">
+                            <div class="circle"></div>
+                        </div>
                     </div>
-                  </div>
 
-                  <div class="album-info">
-                    <div class="album-name">
-                      <h4>Daily Mix 1</h4>
-                    </div>
-                  </div>
+                    <div class="track-duration">4.35</div>
+
                 </div>
 
-              </div>
-              <!-- Fine single Album -->
             </div>
-            <!-- Fine Contenitore Album -->
-          </div>
-          <!-- Fine Album raccomandati -->
+            <!-- Fine Player -->
 
-          <!-- Artisti Popolari -->
-          <div class="popular-artists">
+            <!-- Player Settings -->
+            <div class="player-settings">
 
-            <h2>Artisti più popolari</h2>
+                <div class="footer-container-settings">
 
-            <p class="author intro">
-              Più ascolti, più accurati saranno i suggerimenti
-            </p>
-
-            <!-- Contenitore Album -->
-            <div class="albums-container">
-              <!-- Single Album -->
-              <div class="album">
-
-                <div class="album-content">
-                  <div class="album-img">
-                    <img src="img/youg.jpeg" alt="Lana Del Rey Picture">
-                    <div class="overlay">
-                      <i class="fas fa-play"></i>
+                    <div class="right-icons">
+                        <a href="#"><i class="fas fa-list"></i></a>
+                        <a href="#"><i class="fas fa-desktop"></i></a>
                     </div>
-                  </div>
 
-                  <div class="album-info">
-                    <div class="album-name">
-                      <h4>Release Radar</h4>
+                    <div class="volume-control">
+                        <a href="#">
+                            <i class="fas fa-volume-down"></i>
+                        </a>
+                        <div class="volume-bar">
+                            <div class="current-volume">
+                                <div class="circle"></div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
+
+
                 </div>
 
-              </div>
-              <!-- Fine single Album -->
-
-              <!-- Single Album -->
-              <div class="album">
-
-                <div class="album-content">
-                  <div class="album-img">
-                    <img src="img/einaudi.jpeg" alt="Ludovico Einaudi Picture">
-                    <div class="overlay">
-                      <i class="fas fa-play"></i>
-                    </div>
-                  </div>
-
-                  <div class="album-info">
-                    <div class="album-name">
-                      <h4>Daily Mix 1</h4>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-              <!-- Fine single Album -->
             </div>
-            <!-- Fine Contenitore Album -->
-          </div>
-          <!-- Fine Artisti Popolari -->
-        </div>
-        <!-- Fine MUSIC -->
-      </section>
-      <!-- Fine CCONTENT -->
-    </main>
-    <!-- Fine MAIN -->
-
-
-    <!-- FOOTER -->
-    <footer>
-      <!-- Playing Track -->
-      <div class="now-playing">
-
-        <div class="footer-container-track">
-
-          <div class="track-image">
-            <img src="img/maneskin.png" alt="Album image">
-          </div>
-
-          <div class="track-info">
-            <span>Maneskin</span><br>
-            <a href="#">Zitti e Buoni</a>
-          </div>
-
-          <div class="left-icons">
-            <a href="#"><i class="far fa-heart"></i></a>
-            <a href="#"><i class="far fa-folder"></i></a>
-          </div>
-
-        </div>
-
-      </div>
-      <!-- Fine Playing Track -->
-
-      <!-- Player -->
-      <div class="player">
-
-        <div class="player-commands">
-
-          <div class="player-commands-container">
-
-            <div class="player-commands-icons">
-              <a href="#"><i class="fas fa-random"></i></a>
-              <a href="#"><i class="fas fa-step-backward"></i></a>
-              <a href="#"><i class="fas fa-play"></i></a>
-              <a href="#"><i class="fas fa-step-forward"></i></a>
-              <a href="#"><i class="fas fa-redo-alt"></i></a>
-            </div>
-
-          </div>
-
-        </div>
-
-        <div class="play-bar">
-
-          <div class="current-time">0:25</div>
-
-          <div class="track-bar">
-            <div class="current-time-bar">
-              <div class="circle"></div>
-            </div>
-          </div>
-
-          <div class="track-duration">4.35</div>
-
-        </div>
-
-      </div>
-      <!-- Fine Player -->
-
-      <!-- Player Settings -->
-      <div class="player-settings">
-
-        <div class="footer-container-settings">
-
-          <div class="right-icons">
-            <a href="#"><i class="fas fa-list"></i></a>
-            <a href="#"><i class="fas fa-desktop"></i></a>
-          </div>
-
-          <div class="volume-control">
-            <a href="#">
-              <i class="fas fa-volume-down"></i>
-            </a>
-            <div class="volume-bar">
-              <div class="current-volume">
-                <div class="circle"></div>
-              </div>
-            </div>
-          </div>
-
-
-        </div>
-
-      </div>
-      <!-- Fine Player Settings -->
-    </footer>
-    <!-- Fine FOOTER -->
-  </div>
-  <!-- FINE APP CONTAINER -->
+            <!-- Fine Player Settings -->
+        </footer>
+        <!-- Fine FOOTER -->
+    </div>
+    <!-- FINE APP CONTAINER -->
 </body>
 
 </html>
